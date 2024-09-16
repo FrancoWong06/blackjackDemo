@@ -38,6 +38,7 @@ let dealerCardNum = dealerCardN.charAt(0)
 // let dealerHiddenRandomCard = Math.floor(Math.random() * allCard.length) +1;
 
 
+
 let playerRandomCard = Math.floor(Math.random() * allCard.length);
 playerImg.src = `cards/${allCard[playerRandomCard]}`
 playerCards.appendChild(playerImg)
@@ -130,7 +131,7 @@ hit.addEventListener('click', function(){
 //Stand btn clicked && dealer's turn
 stand.addEventListener('click', function(){
   total.innerText = `Your total is ${playerTotalNum}, Dealer's turn.`
-  
+
   let dealerHiddenRandomCard = Math.floor(Math.random() * allCard.length);
   backCard.src = `cards/${allCard[dealerHiddenRandomCard]}`;
 
@@ -185,7 +186,7 @@ stand.addEventListener('click', function(){
     dealerCards.appendChild(dealerNew);
     let dealerNewCardN = allCard[dealerNewCard];
     let dealerNewCardNum = dealerNewCardN.charAt(0);
-    
+
     function dealerNewCardNumFunc (){
       let dealerNewCardNum = dealerNewCardN.charAt(0)
       if(dealerNewCardNum === '2' || dealerNewCardNum === '3' || dealerNewCardNum === '4' || dealerNewCardNum === '5' || dealerNewCardNum === '6' || dealerNewCardNum === '7' || dealerNewCardNum === '8' || dealerNewCardNum === '9'){
