@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body{
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  background-color: rgb(182, 215, 247);
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+}
+
+img{
+  height: 5em;
+  margin-left: 0.7em;
+}
+
+.dealer, .player{
+  display: flex;
+  justify-content: center;
+}
+
+.playerCards, .dealerCards,.total, .num, .dealerTotal{
+  display: flex;
+  justify-content: center;
+}
+
+.btns, .hit, .stand{
+  display: flex;
+  justify-content: center;
+}
+
+.btns{
+  margin-top: 2em;
+}
+
+.hit{
+  margin-right: 1em;
+}

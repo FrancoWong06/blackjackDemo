@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BlackJack</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h2 class="title">BlackJack</h2>
+  <div class="dealerSection">
+    <h3 class="dealer">Dealer</h3>
+    <div class="dealerCards">
+      <img src="cards/BACK.png" class="back">
+      <!-- <img src="cards/3-C.png">
+      <img src="cards/3-C.png"> -->
+    </div>
+    <p class="dealerTotal">Total:</p>
+  </div>
+
+  <div class="playerSection">
+    <h3 class="player">Player</h3>
+    <div class="playerCards">
+      <!-- <img src="cards/5-C.png">
+      <img src="cards/5-C.png"> -->
+    </div>
+    <p class="total">Total:</p>
+  </div>
+
+  <div class="btns">
+    <button class="hit">Hit</button>
+    <button class="stand" onclick="function disableAllButtons() {
+      const buttons = document.querySelectorAll('button'); // Select all buttons
+      buttons.forEach(button => {
+          button.disabled = true; // Disable each button
+      });
+  }
+  disableAllButtons()">Stand</button>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
